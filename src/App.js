@@ -39,10 +39,15 @@ function App() {
       array[j] = temp;
     }
   }
+  /*eslint-disable */
 
+  //suppress all warnings between comments
   useEffect(() => {
     loadMemes();
-  },);
+  }, []);
+
+  /*eslint-enable */
+
 
   return (
 
